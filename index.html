@@ -8,20 +8,21 @@
     <title>News</title>
    
 </head>
-<body>  <!-- grid-->
+<body> 
+<section class="MAIN">    <!-- grid-->
 
  <!--HEADER--> 
 <div class="topbar">  <!--flex-->
      <!--topbar-->  
     <div id="high">
          <!--2 left button-->
-         <div >
+         <div class="left" >
             <img  src="images\menu.png" alt="">
             <img  src="images\search.png" alt="">
             <form action=""></form>
          </div>
          <!-- few central links  -->
-         <div>
+         <div id="mid">
             <a href="https://www.nytimes.com/">U.S.</a>
             <a href="https://www.nytimes.com/international/?action=click&region=Editions&pgtype=Homepage">INTERNATIONAL</a>
             <a href="https://www.nytimes.com/ca/?action=click&region=Editions&pgtype=Homepage">CANADA</a>
@@ -29,7 +30,7 @@
             <a href="https://cn.nytimes.com/">中文</a>
          </div>
          <!--2 right button  -->
-         <div>
+         <div class="right">
             <button>subscribe for $0.50/week</button>
             <button>LOG IN</button>
          </div>
@@ -39,16 +40,16 @@
     <!-- main field -->
     <div id="middle">
         <!-- date & link for today -->
-        <div>
+        <div class="left">
            <h2>current date</h2>
            <a href="">Today`s Paper</a>
         </div>
         <!-- header -->
-        <div>
+        <div id="title">
             <h1>The New York Times</h1>
         </div>
         <!-- weather -->
-        <div>
+        <div class="right">
         <img src="images\weather.jpg" alt="weather">
         </div>
     <!-- end mainfield -->
@@ -92,8 +93,8 @@
          <!-- article1 -->
         <a href="https://www.nytimes.com/live/2022/08/16/us/wyoming-election-cheney-alaska">
         <article>
-            <h1>Liz Cheney,Trump`s Chief Antagonist,Loses House Primary in a Landslide</h1>
-            <ul> 
+            <h1 class="text">Liz Cheney,Trump`s Chief Antagonist,Loses House Primary in a Landslide</h1>
+            <ul class="text"> 
                 <li><p>Clandestine resistance cells are spotting targets, sabotaging rail lines and killing suspected collaborators as they seek tounnerve Russian forces.</p></li>
                 <li><p>Clandestine resistance cells are spotting targets, sabotaging rail lines and killing suspected collaborators as they seek tounnerve Russian forces.</p></li>
            </ul>
@@ -102,25 +103,31 @@
          <!-- article2 -->
         <a href="https://www.nytimes.com/2022/08/16/us/politics/kelly-tshibaka-murkowski-senate-alaska.html">
         <article>
-             <p>Lisa Murkowski and Kelly Tshibaka have advanced in Alaska`s Senate primary race.</p>
+             <p class="text">Lisa Murkowski and Kelly Tshibaka have advanced in Alaska`s Senate primary race.</p>
         </article>
         </a>
          <!-- article3 (grid) -->
-        <article>
-             <h1>Full Primary Results</h1>
+        <article >
+             <h1 class="text">Full Primary Results</h1>
+             <div class="pic">
              <a href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-wyoming-us-house-district-1.html"><img src="images\grafik.jpg" alt=" "></a>
              <a href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-wyoming-us-house-district-1.html"><img src="images\grafik.jpg" alt=" "></a>
              <a href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-alaska-governor.html"><img src="images\grafik.jpg" alt=" "></a>
              <a href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-alaska-us-senate.html"><img src="images\grafik.jpg" alt=" "></a>
              <a href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-alaska-us-house-district-1.html"><img src="images\grafik.jpg" alt=" "></a>
              <a href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-alaska-us-house-special.html"><img src="images\grafik.jpg" alt=" "></a>
-             <div>
-                <a href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-alaska.html">Alaska</a>
+            </div>
+             <div class="block1-bot">
+             <div class="push">
+                <a style="margin-right:1em" href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-alaska.html">Alaska</a>
                 <a href="https://www.nytimes.com/interactive/2022/08/16/us/elections/results-wyoming.html">Wayoming</a>
-             </div>
-             <p>Source: A.P.Note: | In the Alaska primary, up to</p> 
-             <p>candidates can advance to the general.</p>
-        </article>
+            </div>
+            <div class="A">
+             <p class="sub">Source: A.P.Note: | In the Alaska primary, up to</p> 
+             <p class="sub">candidates can advance to the general.</p>
+            </div>
+            </div>
+            </article>
          <!-- bottom -->
         <div>
             <!-- 2 articles -->
@@ -136,29 +143,29 @@
         <!-- article1-->
             <a href="https://www.nytimes.com/2022/08/17/world/europe/ukraine-partisans-insurgency-russia.html">
             <article>
-                <h1>Behind Enemy Lines, Ukrainians Tell Russians: 'You Are Never Safe'</h1>
-                <p>Clandestine resistance cells are spotting targets, sabotaging rail lines and killing suspected collaborators as they seek tounnerve Russian forces.</p>
+                <h1 class="text">Behind Enemy Lines, Ukrainians Tell Russians: 'You Are Never Safe'</h1>
+                <p class="text">Clandestine resistance cells are spotting targets, sabotaging rail lines and killing suspected collaborators as they seek tounnerve Russian forces.</p>
             </article>
             </a>
         <!-- article2-->
             <a href="https://www.nytimes.com/2022/08/16/world/europe/crimea-russia-ukraine-explosions.html">
             <article>
-                <h1>Ukraine Strikes Again in Crimea,Posing a New Challenge for Putin</h1>
-                <p>President Vladimir V. Putin has made Russia`s seizure of the peninsula a centerpiece of his 22-year rule, but a series of clandestine attacks by Ukrainian forces recently have tested security there.</p>
+                <h1 class="text">Ukraine Strikes Again in Crimea,Posing a New Challenge for Putin</h1>
+                <p class="text">President Vladimir V. Putin has made Russia`s seizure of the peninsula a centerpiece of his 22-year rule, but a series of clandestine attacks by Ukrainian forces recently have tested security there.</p>
             </article>
             </a>
         <!-- article3-->
             <a href="https://www.nytimes.com/live/2022/08/17/world/ukraine-russia-news-war">
             <article>
                 <h1>LIVE</h1>
-                <p>Ukrainian officials warned of a buildup of Russian long-range missile systems in Belarus. Follow updates.</p>
+                <p class="text">Ukrainian officials warned of a buildup of Russian long-range missile systems in Belarus. Follow updates.</p>
             </article>
             </a>
         </div>
         <!-- foto -->
         <div>
         <a href="https://www.nytimes.com/2022/08/17/world/europe/ukraine-partisans-insurgency-russia.html"><img src="https://static01.nyt.com/images/2022/08/16/world/16UkrainePartisans01/16UkrainePartisans01-threeByTwoMediumAt2X.jpg?format=pjpg&quality=75&auto=webp&disable=upscale" alt=" "></a>
-        <p>David Gtenfelder for The New York Times</p>
+        <p class="sub">David Gtenfelder for The New York Times</p>
         </div>
     </section>
 
@@ -168,27 +175,27 @@
         <!-- article1-->
             <a href="https://www.nytimes.com/2022/08/16/us/politics/biden-climate-health-bill.html">
              <article>
-                <h1>Analysis: Biden Signs Climate and Tax Bill Into Law as Other Goals Remain</h1>
-                <p>Clandestine resistance cells are spotting targets, sabotaging rail lines and killing suspected collaborators as they seek tounnerve Russian forces.</p>
+                <h1 class="text">Analysis: Biden Signs Climate and Tax Bill Into Law as Other Goals Remain</h1>
+                <p class="text">Clandestine resistance cells are spotting targets, sabotaging rail lines and killing suspected collaborators as they seek tounnerve Russian forces.</p>
              </article>
             </a>
         <!-- article2-->
              <article>
             <a href="https://www.nytimes.com/2022/08/16/us/politics/biden-climate-health-bill.html">
-                <p>See a detailed picture of what`s in the Democrats` climate and health law.</p>
+                <p class="text">See a detailed picture of what`s in the Democrats` climate and health law.</p>
             </a> 
              </article>
         <!-- article3-->
              <article>
             <a href="https://www.nytimes.com/2022/08/16/us/politics/biden-trump-competition.html">
-                <p>Analysis: President Biden`s victories are often eclipsed by the chaos that is created by and surrounds his predecessor.</p>
+                <p class="text">Analysis: President Biden`s victories are often eclipsed by the chaos that is created by and surrounds his predecessor.</p>
             </a>
             </article>
         </div>
         <!-- foto -->
         <div>   <!-- article " Biden Signs Landmark Inflation Reduction Act Into Low" with background img & video url-->
         <a href="https://nyti.ms/3pmNEEb"><img src="images\white house.jpg" alt=" "></a>
-        <p>The New York Times</p>
+        <p class="sub">The New York Times</p>
         </div>
     </section>
     <!-- block4 -->
@@ -329,6 +336,6 @@
 <!-- END SIDEBAR -->
      
 
-
+</section> 
 </body>
 </html>

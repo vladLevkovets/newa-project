@@ -14,19 +14,43 @@ a {
     font-size: small;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #high img{
     width: 3vh;
+    margin: 0 1vw;
+}
+
+#mid{
+    width:40%;
+    text-align: center;
+}
+.left{
+    width:25%;
+    text-align: left;
+}
+.right{
+    width:25%;
+    text-align: right;
+}
+.right button{
+    background-color:cornflowerblue;
+    border-radius: 5px;
+    color:white;
 }
 #middle {
+    align-items: center;
     height: 10vh;
     font-size: small;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid grey;
 }
-#middle h1{
+#title{
+    width:40vw;
     font-size: large;
-    font-style: italic;
+    font-style:italic;
+    text-align: center;
 }
 #middle h2{
     margin: 0;
@@ -35,6 +59,7 @@ a {
     height: 10vh;
 }
 #low{
+    align-items: center;
     position: sticky;
     top:0;
     padding:0 3vw;
@@ -43,7 +68,7 @@ a {
     display: flex;
     justify-content: space-around;
 }
-s
+
 .main{
     grid-area: main;
     width:100%;
@@ -52,22 +77,60 @@ s
 .main img{
     width:60%;
 }
+.main .text{
+    width:40%;
+}
+.main .block1{
+    width:100%;
+
+}
+.pic{
+    width:100%;
+     display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pic img{
+    width:100%;
+}
+.block1-bot{
+    display: flex;
+     justify-content: space-between; 
+    width:100%;
+}
+.A{
+    display: flex;
+    flex-direction: column;
+align-items: flex-end;
+width: 50%;
+
+}
+.sub {
+    text-align: right;
+    font-size: small;
+    width: 100%;
+    margin: 0 0.5em 0 0;
+}
+.push{
+    width:40%;
+    display:flex;
+    justify-content: left;
+}
 
 .sidebar{
     grid-area: sidebar;
     width:100%;
 }
 .sidebar img{
-    width:80%;
+    width:100%;
 }
 
-body{
+.MAIN{
     display:grid;
     grid-template-areas: 
       "hd hd"
       "main sidebar" ;
     grid-template-rows: 20vh ;
-    grid-template-columns: 70vw 1fr;
+    grid-template-columns: 60vw 1fr;
     gap:1vw;
     margin:0 5vw 3vh;
 }
