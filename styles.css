@@ -145,7 +145,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     gap:2%;
     margin:0 auto;
-    min-height: 300px;
+    min-height: 25vw;
 }
 .pic img{
     width:100%;
@@ -212,13 +212,16 @@ width: 60%;
     padding: 15px 0 30px;
 }
 .block2 img{
-    height: 85%;
-    min-width:500px ;
+    min-height: 30vw;
+    max-height: 200px;
 }
 .block2 p{ 
-     height: 15%; 
-    
-} 
+     height: 15%;
+     }
+#live{
+    color: red;
+}    
+
 .block3{
     display: flex;
     border-bottom: 2px solid black;
@@ -228,7 +231,8 @@ width: 60%;
     padding: 15px 0 30px;
 }
 .block3 img{
-    height: 85%;
+    min-height: 30vw;
+    max-height: 200px;
 }
 .block3 p{
     height: 15%;
