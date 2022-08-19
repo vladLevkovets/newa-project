@@ -1,3 +1,13 @@
+.MAIN{
+    display:grid;
+    grid-template-areas: 
+      "hd hd"
+      "main sidebar" ;
+    grid-template-rows: 20vh ;
+    grid-template-columns: 60vw 1fr;
+    gap:1vw;
+    margin:0 5vw 3vh;
+}
 a {
     text-decoration: none;
     color: black;
@@ -7,6 +17,7 @@ a {
     grid-area: hd;  
     display: flex;
     flex-direction: column;
+    border-bottom: double;
     
 }
 #high{
@@ -44,11 +55,11 @@ a {
     font-size: small;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(180, 185, 183);
 }
 #title{
     width:40vw;
-    font-size: large;
+    font-size:xx-large;
     font-style:italic;
     text-align: center;
 }
@@ -67,27 +78,74 @@ a {
     font-size: small;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .main{
     grid-area: main;
     width:100%;
-    border-right:2px solid grey;
+    border-right:2px solid rgb(180, 185, 183);
+    
 }
 .main img{
-    width:60%;
-}
-.main .text{
-    width:40%;
-}
-.main .block1{
     width:100%;
+}
 
+.main .block1{
+    width:98%;
+    box-sizing: border-box;
+    margin:0 10px;
+}
+.block1-top{
+    
+    display: flex;
+    border-bottom: 1px solid rgb(180, 185, 183);
+}
+.cont{
+    box-sizing: border-box;
+    width:40% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+    margin:0 10px;
+}
+.cont h1{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cont p{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.block1-cont-top{
+    border-bottom: 1px solid rgb(180, 185, 183);
+    
+}
+.block1-cont-top h1{
+    margin: 0 10px 0;
+}
+.chart{
+    box-sizing: border-box;
+    width:60%;
+    margin:0 ;
+}
+
+.chart h1{
+    margin:0 0 1em 0;
+    font-size: large;
+}
+.chart img{
+    min-height: 100%;
 }
 .pic{
     width:100%;
      display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
+    gap:2%;
+    margin:0 auto;
+    min-height: 300px;
 }
 .pic img{
     width:100%;
@@ -101,21 +159,83 @@ a {
     display: flex;
     flex-direction: column;
 align-items: flex-end;
-width: 50%;
+width: 60%;
 
 }
 .sub {
     text-align: right;
     font-size: small;
     width: 100%;
-    margin: 0 0.5em 0 0;
+    margin: 0 0 0 0;
 }
 .push{
     width:40%;
     display:flex;
     justify-content: left;
+    align-items: center;
+}
+.al{
+    padding:0 0.5em 0 0;
+    border-right: 1px solid rgb(180, 185, 183);
+    font-size: larger;
+}
+.wy{
+    padding:0  0 0 0.5em ;
+    font-size: larger;
+}
+.block1-foot{
+    display: flex;
+    width:98%;
+    box-sizing: border-box;
+    margin:10px 10px 0 10px;
+    padding-bottom:20px;
+    border-bottom: 2px solid black;
+    }
+.block1-foot .al{
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+
+    
+}
+.block1-foot .wy{
+    box-sizing: border-box;
+    margin:10px 0 0 0;
+    padding:  0 0 0 10px;
 }
 
+.block2{
+    display: flex;
+    border-bottom: 2px solid black;
+    width:98%;
+    box-sizing: border-box;
+    margin:0 10px;
+    padding: 15px 0 30px;
+}
+.block2 img{
+    height: 85%;
+    min-width:500px ;
+}
+.block2 p{ 
+     height: 15%; 
+    
+} 
+.block3{
+    display: flex;
+    border-bottom: 2px solid black;
+    width:98%;
+    box-sizing: border-box;
+    margin:0 10px;
+    padding: 15px 0 30px;
+}
+.block3 img{
+    height: 85%;
+}
+.block3 p{
+    height: 15%;
+}
+.art{
+    border-bottom: 1px solid rgb(180, 185, 183);
+}
 .sidebar{
     grid-area: sidebar;
     width:100%;
@@ -123,14 +243,90 @@ width: 50%;
 .sidebar img{
     width:100%;
 }
+.sidebar h1{
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sidebar p {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.block1-1 {
+    width:100%
+}
+.block1-1-top  {
+    width:100%;
+    box-sizing: border-box;
+    margin:0 0 20px 0;
+    padding: 0 0 15px;
+    border-bottom: 1px solid rgb(180, 185, 183);
+}     
+.block1-1-top .sub{
+    font-size: small;
+}
+.block1-1-bot{
+    
+    display: flex;
+    width:100%;
+    margin:0 0 10px 0px;
+    padding:  0 0 10px 0px;
+    border-bottom: 2px solid black;
+}
+.block1-1-bot .al{
+    width:100%;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    
+}
+.block1-1-bot .wy{
+    width: 100%;
+    box-sizing: border-box;
+    margin:10px 0 0 0;
+    padding:  0 0 0 20px;
+}
 
-.MAIN{
-    display:grid;
-    grid-template-areas: 
-      "hd hd"
-      "main sidebar" ;
-    grid-template-rows: 20vh ;
-    grid-template-columns: 60vw 1fr;
-    gap:1vw;
-    margin:0 5vw 3vh;
+.block1-2 {
+    width:100%
+}
+.block1-2-top{
+    width:100%;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid rgb(180, 185, 183);
+}
+.block1-2-vid{
+    width:100%;
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
+    padding: 0 0 10px 0;;
+    border-bottom: 1px solid rgb(180, 185, 183);
+}
+.block1-2-mid{
+    width:100%;
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid rgb(180, 185, 183);
+}   
+.block1-2-bot{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    padding:0 0 20px 0;
+    border-bottom: 2px solid black;
+}
+#last{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.block1-2-bot img{
+    width: 45px;
+    height: 45px;
 }
