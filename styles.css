@@ -14,10 +14,13 @@ a {
 }
 
 .topbar{
+    position: sticky;
+    top: -15vh;
     grid-area: hd;  
     display: flex;
     flex-direction: column;
     border-bottom: double;
+    background-color: white;
     
 }
 #high{
